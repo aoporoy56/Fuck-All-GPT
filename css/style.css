@@ -1,4 +1,25 @@
 
+
+.hide{
+    position: absolute;
+    left: -10000px;
+}
+input[type=radio]:checked +  .private .price-box > div{
+    background-color: #ffffff;
+    color: black;
+}
+input[type=radio]:checked +  .sergeant .price-box > div{
+    background-color: #5FC1ED;
+    color: black;
+}
+input[type=radio]:checked +  .captain .price-box > div{
+    background-color: #7DFB91;
+    color: black;
+}
+input[type=radio]:checked +  .general .price-box > div{
+    background-color: #DA396E;
+    color: black;
+}
 body{
     background-color: black;
     color: white;
@@ -38,24 +59,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.price-box:nth-child(2){
-    color: #5FC1ED;
-}
-.price-box:nth-child(2) > div{
-    border: 1px solid #5FC1ED;
-}
-.price-box:nth-child(3){
-    color: #7DFB91;
-}
-.price-box:nth-child(3) > div{
-    border: 1px solid #7DFB91;
-}
-.price-box:nth-child(4){
-    color: #DA396E;
-}
-.price-box:nth-child(4) > div{
-    border: 1px solid #DA396E;
-}
+
 .price-box > div{
     display: flex;
     align-items: center;
@@ -63,6 +67,24 @@ body{
     border: 1px solid white;
     border-radius: 20px;
     padding: 5px 10px;
+}
+.sergeant  .price-box{
+    color: #5FC1ED;
+}
+.sergeant .price-box > div{
+    border: 1px solid #5FC1ED;
+}
+.captain{
+    color: #7DFB91;
+}
+.captain .price-box > div{
+    border: 1px solid #7DFB91;
+}
+.general{
+    color: #DA396E;
+}
+.general .price-box > div{
+    border: 1px solid #DA396E;
 }
 .price-box > div > p{
     margin: 0;
